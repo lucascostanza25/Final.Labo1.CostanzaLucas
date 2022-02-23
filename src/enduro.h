@@ -37,5 +37,6 @@ int enduro_filtrarCategoriaMX1(void* enduro);
 int enduro_filtrarCategoriaMX2(void* enduro);
 int enduro_filtrarCategoriaSUPER_ATV(void* enduro);
 int enduro_ordenarPromedio(void* promedioUno, void* promedioDos);
+int enduro_ordenarCategoria(void* categoriaUno, void*categoriaDos);
 
 #endif /* ENDURO_H_ */

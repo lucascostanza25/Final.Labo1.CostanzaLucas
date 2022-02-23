@@ -283,3 +283,21 @@ int enduro_ordenarPromedio(void* promedioUno, void* promedioDos)
 
 	return retorno;
 }
+
+int enduro_ordenarCategoria(void* categoriaUno, void*categoriaDos)
+{
+	int retorno=-1;
+	char auxCategoriaUno[50];
+	char auxCategoriaDos[50];
+
+	if(categoriaUno!=NULL && categoriaDos!=NULL)
+	{
+		enduro_getCategoria(categoriaUno, auxCategoriaUno);
+		enduro_getCategoria(categoriaDos, auxCategoriaDos);
+
+		retorno=strcmp(auxCategoriaUno, auxCategoriaDos);
+
+	}
+
+	return retorno;
+}

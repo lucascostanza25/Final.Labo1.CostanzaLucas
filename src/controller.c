@@ -199,3 +199,17 @@ int controller_listarCategoriaSUPER_ATV(LinkedList* enduroList, LinkedList* endu
 	return retorno;
 }
 
+int controller_ordenarCategoria(LinkedList* enduroList)
+{
+	int retorno=-1;
+
+	if(enduroList!=NULL)
+	{
+		ll_sort(enduroList, enduro_ordenarCategoria, 0);
+		//controller_ordenarPromedio(enduroList);
+		controller_saveDataAsText("../dataFiltrada.csv", enduroList);
+		retorno=0;
+	}
+
+	return retorno;
+}

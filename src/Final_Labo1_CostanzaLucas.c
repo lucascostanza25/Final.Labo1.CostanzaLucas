@@ -127,7 +127,10 @@ int main(void) {
 			case 6:
 				if(flagMenu==1)
 				{
-
+					if(controller_ordenarCategoria(enduroList)!=-1)
+					{
+						printf("Data ordenada\n");
+					}
 				}
 				else
 				{

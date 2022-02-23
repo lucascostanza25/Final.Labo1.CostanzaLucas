@@ -25,4 +25,6 @@ int controller_listarCategoriaSUPER_ATV(LinkedList* enduroList, LinkedList* endu
 
 int controller_ordenarPromedio(LinkedList* enduroList);
 
+int controller_ordenarCategoria(LinkedList* enduroList);
+
 #endif /* CONTROLLER_H_ */
